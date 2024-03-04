@@ -136,13 +136,13 @@ export default function Home() {
                 value={validators}
               />
             </Skeleton>
-             <Skeleton isLoaded={isLoaded}>
+           <Skeleton isLoaded={isLoaded}>
               <BoxInfo
                 bgColor="purple.200"
                 color="purple.600"
                 icon={FiUsers}
-                name="RPC"
-                value=Online
+                name="RPC Status"
+                text="Online!"
               />
             </Skeleton>
           </SimpleGrid>
