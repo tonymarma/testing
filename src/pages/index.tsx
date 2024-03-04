@@ -139,6 +139,30 @@ export default function Home() {
             </Skeleton>
           </SimpleGrid>
         </Box>
+         <div class="space-y-4 text-white">
+      <h2 class="text-3xl font-bold tracking-tighter md:text-4xl lg:text-5xl/relaxed">About Redbelly</h2>
+      <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+        We are a team of blockchain experts with years of experience in running and maintaining secure and reliable
+        blockchain nodes and validators. Our mission is to make blockchain infrastructure accessible to everyone by
+        providing easy-to-use, scalable, and secure solutions.
+      </p>
+    </div>
+    <div class="space-y-4 text-white">
+      <h2 class="text-3xl font-bold tracking-tighter md:text-4xl lg:text-5xl/relaxed">Our Services On Namada</h2>
+      <div class="grid gap-4 md:gap-6">
+        <div class="flex items-center space-x-4">
+          <div class="font-semibold">Public RPC</div>
+          <p>
+            Our high quality rpc endpoint is ready to serve on Namada Shielded-Expedition testnet. RPC Endpoint:
+            <a class="text-blue-600 hover:underline" href="#" rel="ugc">
+              https://namada.redbelly.xyz
+            </a>
+          </p>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div>
+            <div class="font-semibold">Block Explorer</div>
+          </div>
       </main>
     </>
   )
