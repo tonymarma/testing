@@ -135,19 +135,10 @@ export default function Home() {
                 name="Validators"
                 value={validators}
               />
-            </Skeleton>
-           <Skeleton isLoaded={isLoaded}>
-              <BoxInfo
-                bgColor="purple.200"
-                color="purple.600"
-                icon={FiUsers}
-                name="RPC Status"
-                text="Online!"
-              />
-            </Skeleton>
+            </Skeleton>            
           </SimpleGrid>
         </Box>
-          </main>
+         </main>
     </>
   )
 }
@@ -193,3 +184,6 @@ const BoxInfo = ({
     </VStack>
   )
 }
+
+
+
