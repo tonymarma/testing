@@ -57,6 +57,12 @@ const RefLinkItems: Array<LinkItemProps> = [
     isBlank: true,
   },
   {
+    name: 'Download Our App',
+    icon: FiDownload,
+    route: 'https://github.com/tonymarma/NamadaSE',
+    isBlank: true,
+  },
+  {
     name: 'Github',
     icon: FiGithub,
     route: 'https://github.com/tonymarma',
