@@ -135,7 +135,16 @@ export default function Home() {
                 name="Validators"
                 value={validators}
               />
-            </Skeleton>            
+            </Skeleton>  
+
+            {/* Additional BoxInfo component */}
+            <BoxInfo
+              bgColor="blue.200"
+              color="blue.600"
+              icon={FiUsers}
+              name="Another Info"
+              value="Some value"
+            />
           </SimpleGrid>
         </Box>
          </main>
@@ -184,6 +193,3 @@ const BoxInfo = ({
     </VStack>
   )
 }
-
-
-
