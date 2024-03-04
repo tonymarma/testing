@@ -22,6 +22,7 @@ import {
   FiUsers,
   FiActivity, 
   FiHelpCircle,
+  FiLayers,
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NextLink from 'next/link'
@@ -154,6 +155,14 @@ export default function Home() {
   name="Chain Status"
   value="Chain Halted!"
 />
+            <BoxInfo
+  bgColor="red.400" // Change the background color to a different shade of red
+  color="red.800"   // Change the text color to a different shade of red
+  icon={FiLayers}
+  name="Epoch"
+  value="23"
+/>
+
           </SimpleGrid>
         </Box>
          </main>
