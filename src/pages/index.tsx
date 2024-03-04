@@ -54,8 +54,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Namada Explorers</title>
-        <meta name="description" content="Home | Namada Explorer" />
+        <title>Home | Redbelly Explorer</title>
+        <meta name="description" content="Home | Namada Explorer by Redbelly" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -80,6 +80,7 @@ export default function Home() {
           <Icon fontSize="16" as={FiChevronRight} />
           <Text>Home</Text>
         </HStack>
+        <p>Redbelly explorer and analytics platform for the Namada Blockchain. It empowers users to delve into blocks, transactions, and addresses on the Namada network. We also have an Namada app carefully crafted for Namada Shielded Expedition players, where they can check their ranking, check transactions, blocks, governance proposals, and much more!</p>
         <Box mt={8}>
           <SimpleGrid minChildWidth="200px" spacing="40px">
             <Skeleton isLoaded={isLoaded}>
