@@ -166,17 +166,17 @@ const BoxInfo = ({
       p={4}
       height="150px"
     >
-      <Box
-        backgroundColor=#FFFF00
-        padding={2}
-        height="40px"
-        width="40px"
-        borderRadius={'full'}
-        display={'flex'}
-        justifyContent={'center'}
-        alignItems={'center'}
-        mb={2}
-      >
+     <Box
+  backgroundColor="#FFFF00" // Set background color to #FFFF00 (yellow)
+  padding={2}
+  height="40px"
+  width="40px"
+  borderRadius="full"
+  display="flex"
+  justifyContent="center"
+  alignItems="center"
+  mb={2}
+>
         <Icon fontSize="20" color={color} as={icon} />
       </Box>
       <Heading size={'md'}>{value}</Heading>
