@@ -62,18 +62,6 @@ const RefLinkItems: Array<LinkItemProps> = [
     route: 'https://github.com/tonymarma/NamadaSE',
     isBlank: true,
   },
-  {
-    name: 'Github',
-    icon: FiGithub,
-    route: 'https://github.com/tonymarma',
-    isBlank: true,
-  },
-  {
-    name: 'Report Issues',
-    icon: FiAlertCircle,
-    route: 'https://twitter.com/tonymarma',
-    isBlank: true,
-  },
 ]
 
 export default function Sidebar({ children }: { children: ReactNode }) {
