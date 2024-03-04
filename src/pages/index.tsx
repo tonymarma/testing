@@ -143,8 +143,8 @@ export default function Home() {
               bgColor="blue.200"
               color="blue.600"
               icon={FiActivity}
-              name="RPC Online!"
-              value="RPC URL: https://namada.redbelly.xyz"
+              name="RPC Info"
+              value="RPC Online"
             />
           </SimpleGrid>
         </Box>
