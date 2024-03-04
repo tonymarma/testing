@@ -79,7 +79,66 @@ export default function Home() {
           </Link>
           <Icon fontSize="16" as={FiChevronRight} />
           <Text>Home</Text>
-        </HStack>      
+        </HStack>
+        <h2>Redbelly explorer and analytics platform for the Namada Blockchain. It empowers users to delve into blocks, transactions, and addresses on the Namada network. We also have an Namada app carefully crafted for Namada Shielded Expedition players, where they can check their ranking, check transactions, blocks, governance proposals, and much more!</h2>
+        <Box mt={8}>
+          <SimpleGrid minChildWidth="200px" spacing="40px">
+            <Skeleton isLoaded={isLoaded}>
+              <BoxInfo
+                bgColor="cyan.200"
+                color="cyan.600"
+                icon={FiBox}
+                name="Latest Block Height"
+                value={
+                  newBlock?.header.height
+                    ? newBlock?.header.height
+                    : status?.syncInfo.latestBlockHeight
+                }
+              />
+            </Skeleton>
+            <Skeleton isLoaded={isLoaded}>
+              <BoxInfo
+                bgColor="green.200"
+                color="green.600"
+                icon={FiClock}
+                name="Latest Block Time"
+                value={
+                  newBlock?.header.time
+                    ? displayDate(newBlock?.header.time?.toISOString())
+                    : status?.syncInfo.latestBlockTime
+                    ? displayDate(
+                        status?.syncInfo.latestBlockTime.toISOString()
+                      )
+                    : ''
+                }
+              />
+            </Skeleton>
+
+            <Skeleton isLoaded={isLoaded}>
+              <BoxInfo
+                bgColor="orange.200"
+                color="orange.600"
+                icon={FiCpu}
+                name="Network"
+                value={
+                  newBlock?.header.chainId
+                    ? newBlock?.header.chainId
+                    : status?.nodeInfo.network
+                }
+              />
+            </Skeleton>
+
+            <Skeleton isLoaded={isLoaded}>
+              <BoxInfo
+                bgColor="purple.200"
+                color="purple.600"
+                icon={FiUsers}
+                name="Validators"
+                value={validators}
+              />
+            </Skeleton>
+          </SimpleGrid>
+        </Box>
       </main>
     </>
   )
