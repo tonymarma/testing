@@ -1,7 +1,7 @@
 import { Colors } from '@chakra-ui/react'
 
 export const colors: Colors = {
-  'light-container': '#faee05',
+  'light-container': 'FFFFFF',
   'light-bg': '#171D30',
   'light-theme': '#FFFF00',
   'dark-container': '#2A334C',
