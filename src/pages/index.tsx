@@ -20,6 +20,7 @@ import {
   FiClock,
   FiCpu,
   FiUsers,
+  FiActivity, 
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NextLink from 'next/link'
@@ -141,9 +142,9 @@ export default function Home() {
             <BoxInfo
               bgColor="blue.200"
               color="blue.600"
-              icon={FiUsers}
-              name="Another Info"
-              value="Some value"
+              icon={FiActivity}
+              name="RPC Online!"
+              value="RPC URL: https://namada.redbelly.xyz"
             />
           </SimpleGrid>
         </Box>
