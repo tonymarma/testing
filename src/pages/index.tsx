@@ -21,6 +21,7 @@ import {
   FiCpu,
   FiUsers,
   FiActivity, 
+  FiHelpCircle,
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NextLink from 'next/link'
@@ -146,6 +147,13 @@ export default function Home() {
               name="RPC Info"
               value="RPC Online"
             />
+           <BoxInfo
+  bgColor="red.200" // Change the background color to red.200
+  color="red.600"   // Change the text color to red.600
+  icon={FiHelpCircle}
+  name="Chain Status"
+  value="Chain Halted!"
+/>
           </SimpleGrid>
         </Box>
          </main>
