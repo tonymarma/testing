@@ -25,6 +25,9 @@ import {
   FiCompass,
   FiStar,
   FiSliders,
+  FiDownload,
+  FiLink,
+  
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NextLink from 'next/link'
@@ -49,7 +52,7 @@ const LinkItems: Array<LinkItemProps> = [
 const RefLinkItems: Array<LinkItemProps> = [
   {
     name: 'Website',
-    icon: Link,
+    icon: FiLink,
     route: 'https://redbelly.xyz',
     isBlank: true,
   },
