@@ -62,7 +62,7 @@ export default function Home() {
       <main>
         <HStack h="24px">
           <Heading size={'md'}>Home</Heading>
-         <Divider borderColor="#FFFF00" size="10px" orientation="vertical" />
+         <Divider borderColor={'gray'} size="10px" orientation="vertical" />
           <Link
             as={NextLink}
             href={'/'}
