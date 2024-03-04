@@ -49,7 +49,7 @@ const LinkItems: Array<LinkItemProps> = [
 const RefLinkItems: Array<LinkItemProps> = [
   {
     name: 'Website',
-    icon: FiLink,
+    icon: Link,
     route: 'https://redbelly.xyz',
     isBlank: true,
   },
