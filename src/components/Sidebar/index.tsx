@@ -50,13 +50,13 @@ const RefLinkItems: Array<LinkItemProps> = [
   {
     name: 'Github',
     icon: FiGithub,
-    route: 'https://github.com/pvsairam/nexplorer',
+    route: 'https://github.com/tonymarma',
     isBlank: true,
   },
   {
     name: 'Report Issues',
     icon: FiAlertCircle,
-    route: 'https://github.com/pvsairam/nexplorer/issues',
+    route: 'https://twitter.com/tonymarma',
     isBlank: true,
   },
 ]
@@ -98,8 +98,8 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   // Dynamically select the appropriate logo URL based on the color mode
   const logoUrl = useColorModeValue(
-    'https://raw.githubusercontent.com/pvsairam/nexplorer/main/nLogo/NAMADA%20COMBINED/SVG/Namada_COMB_RGB_Black.svg',
-    'https://raw.githubusercontent.com/pvsairam/nexplorer/main/nLogo/NAMADA%20COMBINED/SVG/Namada_COMB_RGB_YELLOW.svg'
+    'https://raw.githubusercontent.com/tonymarma/namada/main/Namada_COMB_RGB_Black.svg',
+    'https://raw.githubusercontent.com/tonymarma/namada/main/Namada_COMB_RGB_YELLOW.svg'
   )
 
   return (
