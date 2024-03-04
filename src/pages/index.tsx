@@ -138,8 +138,7 @@ export default function Home() {
             </Skeleton>
           </SimpleGrid>
         </Box>
-         <h2>Redbelly explorer and analytics platform for the Namada Blockchain. It empowers users to delve into blocks, transactions, and addresses on the Namada network. We also have an Namada app carefully crafted for Namada Shielded Expedition players, where they can check their ranking, check transactions, blocks, governance proposals, and much more!</h2>      
-      </main>
+         </main>
     </>
   )
 }
