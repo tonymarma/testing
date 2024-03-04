@@ -48,6 +48,12 @@ const LinkItems: Array<LinkItemProps> = [
 
 const RefLinkItems: Array<LinkItemProps> = [
   {
+    name: 'Website',
+    icon: FiLink,
+    route: 'https://redbelly.xyz',
+    isBlank: true,
+  },
+  {
     name: 'Github',
     icon: FiGithub,
     route: 'https://github.com/tonymarma',
