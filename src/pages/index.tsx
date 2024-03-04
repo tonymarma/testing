@@ -136,10 +136,18 @@ export default function Home() {
                 value={validators}
               />
             </Skeleton>
+             <Skeleton isLoaded={isLoaded}>
+              <BoxInfo
+                bgColor="purple.200"
+                color="purple.600"
+                icon={FiUsers}
+                name="RPC"
+                value=Online
+              />
+            </Skeleton>
           </SimpleGrid>
         </Box>
-         <Heading as="h1" size="xl" mb={4}>Redbelly explorer and analytics platform for the Namada Blockchain. It empowers users to delve into blocks, transactions, and addresses on the Namada network. We also have an Namada app carefully crafted for Namada Shielded Expedition players, where they can check their ranking, check transactions, blocks, governance proposals, and much more!</Heading>
-         </main>
+          </main>
     </>
   )
 }
