@@ -51,9 +51,9 @@ const LinkItems: Array<LinkItemProps> = [
 
 const RefLinkItems: Array<LinkItemProps> = [
   {
-    name: 'Website',
+    name: 'The NEBB',
     icon: FiLink,
-    route: 'https://redbelly.xyz',
+    route: 'https://namada.net/shielded-expedition',
     isBlank: true,
   },
   {
