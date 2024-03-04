@@ -167,7 +167,7 @@ const BoxInfo = ({
       height="150px"
     >
       <Box
-        backgroundColor={bgColor}
+        backgroundColor=#FFFF00
         padding={2}
         height="40px"
         width="40px"
