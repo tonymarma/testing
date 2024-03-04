@@ -5,20 +5,21 @@ export default function LoadingPage() {
   return (
     <>
       <Head>
-        <title>Namada Explorer</title>
-        <meta name="description" content="Namada Explorer" />
+        <title>Redbelly Explorer</title>
+        <meta name="description" content="Redbelly Block Explorer For Namada Shielded-Expedition" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Flex
-        minH={'100vh'}
-        align={'center'}
-        justify={'center'}
-        w="100"
-        bg={useColorModeValue('gray.100', 'gray.900')}
-      >
-        <Spinner size="xl" />
-      </Flex>
+    <Flex
+  minH={'100vh'}
+  align={'center'}
+  justify={'center'}
+  w="100"
+  bg="#FFFF00"
+>
+  <Spinner size="xl" />
+</Flex>
+
     </>
   )
 }
