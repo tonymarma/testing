@@ -23,6 +23,7 @@ import {
   FiActivity, 
   FiHelpCircle,
   FiLayers,
+  FiCheckCircle,
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NextLink from 'next/link'
@@ -149,11 +150,11 @@ export default function Home() {
               value="RPC Online"
             />
            <BoxInfo
-  bgColor="red.200" // Change the background color to red.200
-  color="red.600"   // Change the text color to red.600
-  icon={FiHelpCircle}
+  bgColor="green.200" // Change the background color to red.200
+  color="green.600"   // Change the text color to red.600
+  icon={FiCheckCircle}
   name="Chain Status"
-  value="Chain Halted!"
+  value="Chain Healthy"
 />
             <BoxInfo
   bgColor="red.400" // Change the background color to a different shade of red
