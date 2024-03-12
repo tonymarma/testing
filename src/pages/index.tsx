@@ -161,7 +161,7 @@ export default function Home() {
   color="red.800"   // Change the text color to a different shade of red
   icon={FiLayers}
   name="Epoch"
-  value="30"
+  value="31"
 />
 
           </SimpleGrid>
