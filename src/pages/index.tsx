@@ -156,14 +156,6 @@ export default function Home() {
   name="Chain Status"
   value="Chain Healthy"
 />
-            <BoxInfo
-  bgColor="red.400" // Change the background color to a different shade of red
-  color="red.800"   // Change the text color to a different shade of red
-  icon={FiLayers}
-  name="Epoch"
-  value="38"
-/>
-
           </SimpleGrid>
         </Box>
          </main>
