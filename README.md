@@ -1,10 +1,3 @@
-`Namada SE Block Explorer`
+Block Explorer for Namada Shielded Expedition Test Network. With dashboard featuring blocks, transactions, validators, chain parameters and more! 
 
-## Features
-
-- A dashboard to easily monitor chain activity
-- The ability to subscribe to the latest blocks and transactions
-- A search function that allows you to quickly find blocks, transactions, and accounts
-- A list of active validators
-- A list of proposals
-- Blockchain parameters
+# Work in progress, please contact me if you face any issues.
