@@ -90,8 +90,7 @@ export default function Home() {
               <BoxInfo
                 bgColor="cyan.200"
                 color="cyan.600"
-                icon={FiBox}
-                borderRadius="full"
+                icon={FiBox}           
                 name="Latest Block Height"
                 value={
                   newBlock?.header.height
