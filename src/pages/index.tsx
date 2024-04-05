@@ -63,10 +63,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <header style={{ position: 'fixed', width: '100%', top: 0, zIndex: 1000 }}>
         <HStack h="24px">
           <Heading size={'md'}>Home</Heading>
-         <Divider borderColor={'gray'} size="10px" orientation="vertical" />
+          <Divider borderColor={'gray'} size="10px" orientation="vertical" />
           <Link
             as={NextLink}
             href={'/'}
@@ -84,7 +84,9 @@ export default function Home() {
           <Icon fontSize="16" as={FiChevronRight} />
           <Text>Home</Text>
         </HStack>
-         <Box mt={8}>
+      </header>
+      <main style={{ paddingTop: '60px' }}>
+        <Box mt={8}>
           <SimpleGrid minChildWidth="200px" spacing="40px">
             <Skeleton isLoaded={isLoaded}>
               <BoxInfo
@@ -149,16 +151,16 @@ export default function Home() {
               name="RPC Info"
               value="RPC Online"
             />
-           <BoxInfo
-  bgColor="green.200" // Change the background color to red.200
-  color="green.600"   // Change the text color to red.600
-  icon={FiCheckCircle}
-  name="Chain Status"
-  value="Chain Healthy"
-/>
+            <BoxInfo
+              bgColor="green.200" // Change the background color to red.200
+              color="green.600"   // Change the text color to red.600
+              icon={FiCheckCircle}
+              name="Chain Status"
+              value="Chain Healthy"
+            />
           </SimpleGrid>
         </Box>
-         </main>
+      </main>
     </>
   )
 }
