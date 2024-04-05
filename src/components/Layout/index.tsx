@@ -1,6 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Sidebar from '../Sidebar'
 import Connect from '../Connect'
 import LoadingPage from '../LoadingPage'
 import Navbar from '../Navbar'
@@ -83,15 +82,9 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <>
-      {isLoading ? <LoadingPage /> : <></>}
-      {connectState && !isLoading ? (
-        <Sidebar>
-          <Navbar />
-          {children}
-        </Sidebar>
-      ) : (
-        <></>
-      )}
+      {isLoading ? <LoadingPage /> : null}
+      {connectState && !isLoading ? <Navbar /> : null}
+      {children}
       {!connectState && !isLoading ? <Connect /> : null}
     </>
   )
