@@ -63,10 +63,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header style={{ position: 'fixed', width: '100%', top: 0, zIndex: 1000 }}>
+      <main>
         <HStack h="24px">
           <Heading size={'md'}>Home</Heading>
-          <Divider borderColor={'gray'} size="10px" orientation="vertical" />
+         <Divider borderColor={'gray'} size="10px" orientation="vertical" />
           <Link
             as={NextLink}
             href={'/'}
@@ -84,9 +84,7 @@ export default function Home() {
           <Icon fontSize="16" as={FiChevronRight} />
           <Text>Home</Text>
         </HStack>
-      </header>
-      <main style={{ paddingTop: '60px' }}>
-        <Box mt={8}>
+         <Box mt={8}>
           <SimpleGrid minChildWidth="200px" spacing="40px">
             <Skeleton isLoaded={isLoaded}>
               <BoxInfo
@@ -151,9 +149,9 @@ export default function Home() {
               name="RPC Info"
               value="RPC Online"
             />
-            <BoxInfo
-              bgColor="green.200" // Change the background color to red.200
-              color="green.600"   // Change the text color to red.600
+           <BoxInfo
+              bgColor="green.200"
+              color="green.600"
               icon={FiCheckCircle}
               name="Chain Status"
               value="Chain Healthy"
@@ -161,6 +159,19 @@ export default function Home() {
           </SimpleGrid>
         </Box>
       </main>
+      <footer>
+        <HStack justify="center" bg="gray.200" p={4}>
+          <Link as={NextLink} href="/validators" style={{ textDecoration: 'none' }}>
+            <Text fontSize="sm">Validators</Text>
+          </Link>
+          <Link as={NextLink} href="/parameters" style={{ textDecoration: 'none' }}>
+            <Text fontSize="sm">Parameters</Text>
+          </Link>
+          <Link as={NextLink} href="/proposal" style={{ textDecoration: 'none' }}>
+            <Text fontSize="sm">Proposal</Text>
+          </Link>
+        </HStack>
+      </footer>
     </>
   )
 }
@@ -172,6 +183,7 @@ interface BoxInfoProps extends FlexProps {
   name: string
   value: string | number | undefined
 }
+
 const BoxInfo = ({
   bgColor,
   color,
@@ -189,7 +201,7 @@ const BoxInfo = ({
       height="150px"
     >
      <Box
-      backgroundColor={bgColor} // Set background color to #FFFF00 (yellow)
+      backgroundColor={bgColor}
       padding={2}
       height="40px"
       width="40px"
