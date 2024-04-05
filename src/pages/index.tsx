@@ -131,17 +131,15 @@ export default function Home() {
               />
             </Skeleton>
 
-         <Link href="/Validators" passHref>
-  <Skeleton isLoaded={isLoaded}>
-    <BoxInfo
-      bgColor="purple.200"
-      color="purple.600"
-      icon={FiUsers}
-      name="Validators"
-      value={validators}
-    />
-  </Skeleton>  
-</Link>
+           <Skeleton isLoaded={isLoaded}>
+              <BoxInfo
+                bgColor="purple.200"
+                color="purple.600"
+                icon={FiUsers}
+                name="Validators"
+                value={validators}
+              />
+            </Skeleton>
             {/* Additional BoxInfo component */}
             <BoxInfo
               bgColor="blue.200"
