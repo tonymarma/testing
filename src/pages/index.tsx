@@ -91,6 +91,7 @@ export default function Home() {
                 bgColor="cyan.200"
                 color="cyan.600"
                 icon={FiBox}
+                borderRadius="full"
                 name="Latest Block Height"
                 value={
                   newBlock?.header.height
