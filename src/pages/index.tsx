@@ -158,34 +158,26 @@ export default function Home() {
           </SimpleGrid>
         </Box>
       </main>
-    import { HStack, Link, Text } from '@chakra-ui/react';
-import NextLink from 'next/link';
-
-const BottomNavigation: React.FC = () => {
-  return (
-    <footer style={{ position: 'fixed', bottom: 0, left: 0, width: '100%', backgroundColor: 'black' }}>
-      <HStack justify="center" p={4}>
-        <Link as={NextLink} href="/validators" style={{ textDecoration: 'none', color: 'white' }}>
-          <Text fontSize="xl">Validators</Text>
-        </Link>
-        <Link as={NextLink} href="/blocks" style={{ textDecoration: 'none', color: 'white' }}>
-          <Text fontSize="xl">Blocks</Text>
-        </Link>
-        <Link as={NextLink} href="/txs" style={{ textDecoration: 'none', color: 'white' }}>
-          <Text fontSize="xl">Transactions</Text>
-        </Link>
-        <Link as={NextLink} href="/parameters" style={{ textDecoration: 'none', color: 'white' }}>
-          <Text fontSize="xl">Parameters</Text>
-        </Link>
-        <Link as={NextLink} href="/proposals" style={{ textDecoration: 'none', color: 'white' }}>
-          <Text fontSize="xl">Proposals</Text>
-        </Link>
-      </HStack>
-    </footer>
-  );
-};
-
-export default BottomNavigation;
+     <footer>
+       <HStack justify="center" bg="black.600" p={4}>
+          <Link as={NextLink} href="/validators" style={{ textDecoration: 'none' }}>
+            <Text fontSize="X1">Validators</Text>
+          </Link>
+          <Link as={NextLink} href="/blocks" style={{ textDecoration: 'none' }}>
+            <Text fontSize="X!">Blocks</Text>
+          </Link>		  
+		  <Link as={NextLink} href="/txs" style={{ textDecoration: 'none' }}>
+            <Text fontSize="X1">Transactions</Text>
+          </Link>
+		  
+          <Link as={NextLink} href="/parameters" style={{ textDecoration: 'none' }}>
+            <Text fontSize="X1">Parameters</Text>
+          </Link>
+          <Link as={NextLink} href="/proposals" style={{ textDecoration: 'none' }}>
+            <Text fontSize="X1">Proposals</Text>
+          </Link>
+        </HStack>
+      </footer>
     </>
   )
 }
