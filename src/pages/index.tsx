@@ -163,11 +163,18 @@ export default function Home() {
           <Link as={NextLink} href="/validators" style={{ textDecoration: 'none' }}>
             <Text fontSize="sm">Validators</Text>
           </Link>
+          <Link as={NextLink} href="/blocks" style={{ textDecoration: 'none' }}>
+            <Text fontSize="sm">Blocks</Text>
+          </Link>		  
+		  <Link as={NextLink} href="/txs" style={{ textDecoration: 'none' }}>
+            <Text fontSize="sm">Transactions</Text>
+          </Link>
+		  
           <Link as={NextLink} href="/parameters" style={{ textDecoration: 'none' }}>
             <Text fontSize="sm">Parameters</Text>
           </Link>
-          <Link as={NextLink} href="/proposal" style={{ textDecoration: 'none' }}>
-            <Text fontSize="sm">Proposal</Text>
+          <Link as={NextLink} href="/proposals" style={{ textDecoration: 'none' }}>
+            <Text fontSize="sm">Proposals</Text>
           </Link>
         </HStack>
       </footer>
