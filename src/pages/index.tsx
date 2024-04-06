@@ -159,7 +159,7 @@ export default function Home() {
         </Box>
       </main>
       <footer>
-        <HStack justify="center" bg="gray.600" p={4}>
+        <HStack justify="center" bg="black.300" p={4}>
           <Link as={NextLink} href="/validators" style={{ textDecoration: 'none' }}>
             <Text fontSize="sm">Validators</Text>
           </Link>
